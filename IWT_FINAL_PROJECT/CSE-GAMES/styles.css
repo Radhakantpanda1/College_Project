@@ -1,0 +1,33 @@
+
+.video-container {
+    background-color: #2d1010;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.video-inner {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.video-inner video {
+    border: 2px solid black;
+    width: 300px;
+    margin-right: 20px;
+    transition: transform 0.3s;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.video-inner video:hover {
+    transform: scale(1.1);
+}

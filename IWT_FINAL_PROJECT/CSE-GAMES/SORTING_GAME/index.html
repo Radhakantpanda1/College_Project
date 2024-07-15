@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selection Sort Game</h1>
+        <div class="array-container" id="arrayContainer"></div>
+        <div class="controls">
+            <button onclick="resetArray()">Reset Array</button>
+            <button onclick="startSort()">Start Sorting</button>
+        </div>
+        <div class="analysis">
+            <h2>Selection Sort Analysis</h2>
+            <p><strong>Selection Sort:</strong> A simple sorting algorithm. Time Complexity: O(n<sup>2</sup>).</p>
+            <p>In each pass, the smallest element in the unsorted part of the array is selected and moved to the sorted part.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

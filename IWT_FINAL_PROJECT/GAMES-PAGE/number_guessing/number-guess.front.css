@@ -1,0 +1,38 @@
+body {
+    background-image: url(https://easyshiksha.com/online_courses/assets/games/number-guessing/images/banner.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    background-color: yellow;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button a {
+    text-decoration: none;
+    color: rgb(6, 6, 6);
+}
+
+button:hover {
+    background-color: rgb(234, 18, 18);
+    color: white;
+    transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+}

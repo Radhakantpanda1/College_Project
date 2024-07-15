@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stack Visualizer</h1>
+        <div class="stack-container" id="stackContainer"></div>
+        <div class="controls">
+            <input type="text" id="inputValue" placeholder="Enter value">
+            <button onclick="push()">Push</button>
+            <button onclick="pop()">Pop</button>
+        </div>
+        <div class="analysis">
+            <h2>Analysis</h2>
+            <p><strong>Push:</strong> Adding an element to the top of the stack. Time Complexity: O(1).</p>
+            <p><strong>Pop:</strong> Removing an element from the top of the stack. Time Complexity: O(1).</p>
+            <p>In a stack, elements are added to and removed from the top. This ensures a LIFO (Last In, First Out) order.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

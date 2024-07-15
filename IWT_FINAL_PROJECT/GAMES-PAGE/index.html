@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 10px;
+            width: calc(25% - 20px); 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card .content {
+            padding: 15px;
+            flex-grow: 1;
+        }
+        .card .content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .card .content p {
+            font-size: 1em;
+            color: #666;
+        }
+        .card .play-button {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+        .card .play-button:hover {
+            background-color: #0056b3;
+        }
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px); 
+            }
+        }
+        @media (max-width: 480px) {
+            .card {
+                width: calc(100% - 20px); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cards-container">
+        <div class="card">
+            <img src="/Resources/snake.jpg" alt="Image 1">
+            <div class="content">
+                <h3>Fruit Snake</h3>
+                <p>The Fruit Snake game involves guiding a growing snake to eat fruits while avoiding walls and itself.</p>
+            </div>
+            <a class="play-button" href="/GAMES-PAGE/SnakeGame/index.html">Play</a>
+        </div>
+        <div class="card">
+            <img src="/Resources/dino.jpg" alt="Image 2">
+            <div class="content">
+                <h3>iDragon Adventure</h3>
+                <p>iDragon Go is a strategy board game where two players place black or white stones on a grid, aiming to control the most territory by surrounding their opponent's stones.</p>
+            </div>
+            <a class="play-button" href="/GAMES-PAGE/JavaScript Dragon Game/JavaScript Dragon Game/index.html">Play</a>
+        </div>
+        <div class="card">
+            <img src="/Resources/pokemon.jpg" alt="Image 3">
+            <div class="content">
+                <h3>Pokemon Go</h3>
+                <p>. The game encourages exploration, as players must travel to different areas to find and capture various Pokémon, participate in battles, and collect items from PokéStops.</p>
+            </div>
+            <a class="play-button" href="/GAMES-PAGE/water/card-front.html">Play</a>
+        </div>
+        <div class="card">
+            <img src="/Resources/rock-paper3.jpg" alt="Image 4">
+            <div class="content">
+                <h3>Stone-Paper-Scissor</h3>
+                <p>Stone-Paper-Scissor is a hand game where two players simultaneously form one of three shapes: stone, paper, or scissors. Stone crushes scissors, scissors cuts paper, and paper covers stone. </p>
+            </div>
+            <a class="play-button" href="/GAMES-PAGE/stone_paper_scissor/OneDrive-2024-07-13/index.html">Play</a>
+        </div>
+        <div class="card">
+            <img src="/Resources/tic-tac-toe.jpg" alt="Image 5">
+            <div class="content">
+                <h3>Tic-Tac-Toe</h3>
+                <p>Tic Tac Toe is a game where two players take turns marking X or O in a 3x3 grid. The goal is to place three of their marks in a row, column, or diagonal to win.</p>
+            </div>
+            <a class="play-button" href="/GAMES-PAGE/tic-tac-toe-front/tic-tac-toe-front.html">Play</a>
+        </div>
+        <div class="card">
+            <img src="/Resources/numberGuess.jpg" alt="Image 6">
+            <div class="content">
+                <h3>Guess The Number</h3>
+                <p>Guess the Number is a game where players try to guess a randomly chosen number within a certain range, receiving feedback to narrow down their guesses until they find the correct number.</p>
+            </div>
+            <a class="play-button" href="/GAMES-PAGE/number_guessing/number-guess.front.html">Play</a>
+        </div>
+        <div class="card">
+            <img src="/Resources/maze_game.png" alt="Image 7">
+            <div class="content">
+                <h3>Maze Game</h3>
+                <p>This is a description of the card. It provides some brief information about the content.</p>
+            </div>
+            <a class="play-button" href="/GAMES-PAGE/maze_game/ihome.html">Play</a>
+        </div>
+        <div class="card">
+            <img src="/Resources/cse.jpg" alt="Image 8">
+            <div class="content">
+                <h3>CS Concepts</h3>
+                <p>Gamifing Computer Science Concepts for easier understanding.</p>
+            </div>
+            <a class="play-button" href="#">Play</a>
+        </div>
+    </div>
+</body>
+</html>
